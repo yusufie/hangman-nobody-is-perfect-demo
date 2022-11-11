@@ -1,0 +1,181 @@
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: url(../images/cursor.png), auto;
+  background-image: url(../images/background1400.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Athiti", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+}
+
+p.hint {
+  display: none;
+  font-size: 1rem;
+  text-align: center;
+  color: greenyellow;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+
+.letter {
+  padding: 0.5rem;
+  border: none;
+  font-size: 2rem;
+  text-align: center;
+  color: rgb(250, 140, 50);
+  margin-bottom: 0%;
+}
+
+#img {
+  height: 10rem;
+  width: 10rem;
+}
+
+div.result {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+div.lives {
+color: red;
+}
+
+div.win {
+  color: greenyellow;
+}
+
+div.lose {
+  color: red;
+}
+
+button.playAgain {
+  padding: 0.5rem;
+  border: 1px solid white;
+  border-radius: 10%;
+  background-color: transparent;
+  color: white;
+  font-size: 1.4rem;
+  cursor: url(../images/cursor.png), auto;
+}
+
+button.playAgain:hover {
+  background-color: greenyellow;
+  color: black;
+  transform: scale(1.2);
+}
+
+#alphabet {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 2rem;
+  gap: 0.5rem;
+}
+
+button.btn {
+  padding: 0.5rem;
+  border: 1px solid white;
+  border-radius: 20%;
+  background-color: transparent;
+  color: white;
+  font-size: 1.4rem;
+  cursor: url(../images/cursor.png), auto;
+}
+
+button.btn:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.2);
+}
+
+button#showHint {
+  padding: 0.5rem;
+  border: 1px solid greenyellow;
+  border-radius: 10%;
+  background-color: transparent;
+  color: greenyellow;
+  font-size: 1.4rem;
+  cursor: url(../images/cursor.png), auto;
+}
+
+button#showHint:hover {
+  background-color: greenyellow;
+  color: black;
+  transform: scale(1.2);
+}
+
+/* animation */
+#potter-animation {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  bottom: 0px;
+  /* left: 250px; */
+}
+
+.spell-text {
+  position: relative;
+}
+
+.spell-text .spell-tags {
+  color: #fff;
+  list-style-type: none;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.spell-text .spell-tags li {
+  display: inline-block;
+  font-weight: bold;
+  padding-right: 15px;
+}
+
+.spell-text .spell-tags li:hover {
+  color: #f8e71c;
+  transform: scale(1.1);
+}
+
+.spell-text .spell-tags .emma {
+  color: #d18f41;
+}
+.spell-text .spell-tags .hp {
+  color: #b73749;
+}
+.spell-text .spell-tags .sl {
+  color: #629824;
+}
+.spell-text .spell-tags .gr {
+  color: #b73749;
+}
+.spell-text .spell-tags .ra {
+  color: #4267b2;
+}
+.spell-text .spell-tags .huf {
+  color: #d18f41;
+}
