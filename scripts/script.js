@@ -2,7 +2,7 @@
 let spells = [];
 let hints = [];
 const gettingDatas = () =>
-  fetch("https://hp-api.herokuapp.com/api/spells?number=10%27").then(
+  fetch("https://hp-api.onrender.com/api/spells").then(
     (response) => response.json().then((data) => loadData(data))
   );
 
