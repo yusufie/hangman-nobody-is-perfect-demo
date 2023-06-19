@@ -141,7 +141,8 @@ const loadData = (arr) => {
 
 gettingDatas();
 
-// animation
+
+// Animation
 const spellAnimation = bodymovin.loadAnimation({
   container: document.getElementById("potter-animation"),
   renderer: "svg",
@@ -150,11 +151,13 @@ const spellAnimation = bodymovin.loadAnimation({
   path: "https://raw.githubusercontent.com/abrahamrkj/facebook-spell/master/data.json",
 });
 
-$(".spell-tags li").click(function () {
-  spellAnimation.stop();
-  spellAnimation.play();
+document.querySelectorAll(".spell-tags").forEach(function (element) {
+  element.addEventListener("click", function () {
+    spellAnimation.stop();
+    spellAnimation.play();
+  });
 });
 
-$(document).ready(function () {
+document.addEventListener("DOMContentLoaded", function () {
   spellAnimation.play();
 });

@@ -23,6 +23,7 @@ p.hint {
   font-size: 1rem;
   text-align: center;
   color: greenyellow;
+  margin: 0;
 }
 
 .container {
@@ -70,6 +71,7 @@ div.lose {
 }
 
 button.playAgain {
+  display: inline;
   padding: 0.5rem;
   border: 1px solid white;
   border-radius: 10%;
@@ -137,45 +139,24 @@ button#showHint:hover {
 }
 
 .spell-text {
-  position: relative;
+  display: inline-flex;
+  gap: 1rem;
+  padding-top: 1rem;
 }
 
 .spell-text .spell-tags {
-  color: #fff;
-  list-style-type: none;
-  text-align: center;
-  justify-content: center;
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.spell-text .spell-tags li {
-  display: inline-block;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0;
   font-weight: bold;
-  padding-right: 15px;
+  color: #b73749;
 }
 
-.spell-text .spell-tags li:hover {
+.spell-text .spell-tags:hover {
   color: #f8e71c;
   transform: scale(1.1);
-}
-
-.spell-text .spell-tags .emma {
-  color: #d18f41;
-}
-.spell-text .spell-tags .hp {
-  color: #b73749;
-}
-.spell-text .spell-tags .sl {
-  color: #629824;
-}
-.spell-text .spell-tags .gr {
-  color: #b73749;
-}
-.spell-text .spell-tags .ra {
-  color: #4267b2;
-}
-.spell-text .spell-tags .huf {
-  color: #d18f41;
 }
